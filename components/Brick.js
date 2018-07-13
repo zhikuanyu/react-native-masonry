@@ -9,7 +9,7 @@ export default function Brick (props) {
 	const header = (props.renderHeader) ? props.renderHeader(props.data) : null;
 
 	return (
-		<View key={props.brickKey}>
+		<View key={props.brickKey} style={props.itemContainerStyle}>
 		  {header}
 		  {image}
 		  {footer}
